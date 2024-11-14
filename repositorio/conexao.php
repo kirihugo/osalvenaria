@@ -15,7 +15,7 @@ $databasename = "hostdeprojetos_osalvenaria";
 
 $username = "root";
 $password = "";
-$databasename = "hostdeprojetos_osalvenaria";
+$databasename = "osalvenaria";
 //criação da conexão
 $conn = new mysqli($servername, $username, $password, $databasename);
 

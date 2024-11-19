@@ -9,7 +9,7 @@ $servername = "localhost";
 //senha         HOMOLOGAÇÃO: ifspgru@2022
 //databasename  HOMOLOGAÇÃO: hostdeprojetos_osalvenaria;
 
-$username = "hostdeprojetos_osalvenaria";
+$username = "hostdeprojetos";
 $password = "ifspgru@2022";
 $databasename = "hostdeprojetos_osalvenaria";
 

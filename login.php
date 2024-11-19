@@ -63,7 +63,7 @@
             </div>
             <button type="submit" class="formulario-button">Entrar</button>
             <p id="msgLogin" style="color: red;"></p>
-            <a href="cadastro.html">Ir para Cadastro</a>
+            <a href="cadastro.html">Não possui cadastro?</a>
             <br>
             <a href="index.html">Ir para tela inicial</a>
         </form>

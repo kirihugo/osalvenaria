@@ -37,6 +37,7 @@
           <li><a href="services.html">Serviços</a></li>
           <li><a href="contact.html">Contatos</a></li>
           <li><a href="login.php" class="active">Login</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>

@@ -27,7 +27,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
 
-        <i class="bi bi-camera"></i>
+        <i class=""></i>
         <h1 class="sitename">O.S. Alvenaria</h1>
       </a>
 

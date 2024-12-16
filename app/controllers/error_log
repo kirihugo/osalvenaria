@@ -1,0 +1,9 @@
+[16-Dec-2024 13:24:50 UTC] PHP Fatal error:  Uncaught Exception: Violação de chave única ou estrangeira. in /home2/hostdeprojetos/public_html/osalvenaria/app/core/DBQuery.php:228
+Stack trace:
+#0 /home2/hostdeprojetos/public_html/osalvenaria/app/models/Usuarios.php(60): app\core\DBQuery->insert()
+#1 /home2/hostdeprojetos/public_html/osalvenaria/app/controllers/CtrlUsuarios.php(46): app\models\Usuarios->save()
+#2 /home2/hostdeprojetos/public_html/osalvenaria/app/core/ControllerHandler.php(24): app\controllers\CtrlUsuarios->post()
+#3 /home2/hostdeprojetos/public_html/osalvenaria/app/controllers/CtrlUsuarios.php(16): app\core\ControllerHandler->__construct()
+#4 /home2/hostdeprojetos/public_html/osalvenaria/app/controllers/CtrlUsuarios.php(84): app\controllers\CtrlUsuarios->__construct()
+#5 {main}
+  thrown in /home2/hostdeprojetos/public_html/osalvenaria/app/core/DBQuery.php on line 228

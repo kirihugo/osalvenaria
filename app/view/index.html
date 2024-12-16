@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>O.S. Alvenaria</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/img/logo1.jpg" rel="logo">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <style type="text/css">
+  .modal-dark .modal-content {
+    background-color: #343a40; /* Cor de fundo escura */
+    color: #fff; /* Texto branco */
+  }
+  
+  .modal-dark .modal-header {
+    border-bottom: 1px solid #495057; /* Borda inferior mais clara */
+  }
+  .modal-dark .modal-footer {
+    border-top: 1px solid #495057; /* Borda superior mais clara */
+  }
+  .modal-dark .table th, 
+  .modal-dark .table td {
+    color: #fff; /* Cor do texto dentro da tabela */
+  }
+  .modal-dark .table {
+    background-color: #495057; /* Fundo da tabela */
+    border-color: #6c757d; /* Cor das bordas */
+  }
+  .modal-dark .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+  .modal-dark .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+  }  
+  
+  .footer {
+      background-color: black;
+      padding: 20px 0;
+    }
+    .social-links a {
+      color: #333;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">O.S. Alvenaria</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul style="margin-right:100px;">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="services.html">Serviços</a></li>
+          <li><a href="contact.html">Contatos</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <div class="header-social-links">
+        <a href="https://www.facebook.com/profile.php?id=61569853776755&mibextid=ZbWKwL" target="_blank">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <!-- Link para o Instagram -->
+        <a href="https://www.instagram.com/santos.alvenaria/" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+ <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Bem vindos!!</h1>
+              <p class="mb-0"> Na O.S.Alvenaria você encontra tudo o que precisa para a sua obra. Oferecemos uma linha completa de materiais para alvenaria, com a qualidade e o preço que você procura. Nossos profissionais estão à disposição para te ajudar a escolher os produtos ideais para cada etapa da sua obra. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <main class="main">
+    <section id="gallery" class="gallery section">
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center gallery-container">
+          <!-- Os itens da galeria serão carregados aqui dinamicamente -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+   <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright text-center">
+         <p>© <a href="admin.php"><strong class="px-1 sitename">HULUNE</strong> </a> Todos os Direitos Reservados</p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <!-- Link correto para compartilhar no Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=61569853776755&mibextid=ZbWKwL" target="_blank">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <!-- Link para o Instagram -->
+        <a href="https://www.instagram.com/santos.alvenaria/" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+<script>
+  $(document).ready(function () {
+    // Função para exibir os detalhes do produto em um modal
+    function showProductDetails(product) {
+      const modalHTML = `
+        <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel">${product.nome}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr><th>ID</th><td>${product.id}</td></tr>
+                    <tr><th>Nome</th><td>${product.nome}</td></tr>
+                    <tr><th>Descrição</th><td>${product.descricao}</td></tr>
+                    <tr><th>Preço</th><td>R$ ${parseFloat(product.preco).toFixed(2).replace('.', ',')}</td></tr>
+                    <tr><th>Quantidade</th><td>${product.quantidade}</td></tr>
+                    <tr><th>Tipo</th><td>${product.tipo}</td></tr>
+                    <tr><th>Ativo</th><td>${product.ativo === "1" ? "Sim" : "Não"}</td></tr>
+                    ${product.img02 ? `<tr><th>Imagem Extra</th><td><img src="${product.img02}" alt="Imagem extra" class="img-fluid" /></td></tr>` : ''}
+                  </tbody>
+                </table>
+                <img src="${product.img01}" alt="${product.nome}" class="img-fluid mb-3" />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      $("body").append(modalHTML);
+      const modal = new bootstrap.Modal(document.getElementById('productModal'));
+      modal.show();
+      $('#productModal').on('hidden.bs.modal', function () {
+        $(this).remove();
+      });
+    }
+
+    // Função para carregar os produtos dinamicamente
+    function loadGalleryItems() {
+      const galleryContainer = $(".gallery-container");
+
+      // Adiciona o spinner de carregamento
+      galleryContainer.html(`
+        <div class="text-center my-5">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>
+        </div>
+      `);
+
+      $.ajax({
+        url: '../controllers/CtrlProdutos.php',
+        type: 'GET',
+        dataType: 'json',
+        success: function (data) {
+          galleryContainer.empty(); // Limpa os itens existentes
+          data.forEach(product => {
+            const galleryItem = `
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100" data-product='${JSON.stringify(product)}'>
+                  <img src="${product.img01}" class="img-fluid" alt="${product.nome}">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="#" class="details-link">
+                      <i class="bi bi-info-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>`;
+            galleryContainer.append(galleryItem);
+          });
+
+          // Ativa o plugin Glightbox após adicionar os itens dinamicamente
+          GLightbox({
+            selector: '.glightbox'
+          });
+
+          // Evento para exibir os detalhes do produto
+          $(".details-link").on("click", function (e) {
+            e.preventDefault();
+            const product = $(this).closest('.gallery-item').data('product');
+            showProductDetails(product);
+          });
+        },
+        error: function (xhr) {
+          console.error("Erro ao carregar produtos:", xhr.responseText);
+          galleryContainer.html("<p class='text-danger text-center'>Erro ao carregar itens. Tente novamente mais tarde.</p>");
+        }
+      });
+    }
+
+    // Carregar itens na inicialização
+    loadGalleryItems();
+  });
+</script>
+
+</body>
+</html>
